@@ -1,12 +1,12 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/rosepine.vim
+" Filename: autoload/lightryanline/colorscheme/rosepine.vim
 " Author: sheruost
 " License: MIT License
 " Last Change: 2022/05/09 23:27:50.
 " =============================================================================
 
 " Reference: https://rosepinetheme.com/palette
-if lightline#colorscheme#background() ==# 'light'
+if lightryanline#colorscheme#background() ==# 'light'
   " Rosé Pine Dawn
   let s:base = [ '#faf4ed', 255 ]
   let s:surface = [ '#fffaf3', 255 ]
@@ -55,4 +55,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:love, s:base ] ]
 let s:p.normal.warning = [ [ s:rose, s:surface ] ]
 
-let g:lightline#colorscheme#rosepine#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#rosepine#palette = lightryanline#colorscheme#flatten(s:p)

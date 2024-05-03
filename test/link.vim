@@ -3,9 +3,9 @@ let s:assert = themis#helper('assert')
 
 function! s:suite.before_each()
   call s:clear()
-  let g:lightline = {}
-  call lightline#init()
-  call lightline#colorscheme()
+  let g:lightryanline = {}
+  call lightryanline#init()
+  call lightryanline#colorscheme()
 endfunction
 
 function! s:clear()
@@ -28,7 +28,7 @@ function! s:hi(name)
 endfunction
 
 function! s:suite.link()
-  call lightline#link()
+  call lightryanline#link()
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_normal_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_normal_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -40,7 +40,7 @@ function! s:suite.link()
 endfunction
 
 function! s:suite.insert()
-  call lightline#link('i')
+  call lightryanline#link('i')
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_insert_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_insert_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -52,7 +52,7 @@ function! s:suite.insert()
 endfunction
 
 function! s:suite.visual()
-  call lightline#link('v')
+  call lightryanline#link('v')
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_visual_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_visual_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -64,7 +64,7 @@ function! s:suite.visual()
 endfunction
 
 function! s:suite.replace()
-  call lightline#link('R')
+  call lightryanline#link('R')
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_replace_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_replace_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -76,15 +76,15 @@ function! s:suite.replace()
 endfunction
 
 function! s:suite.left_right()
-  let g:lightline = {
+  let g:lightryanline = {
         \   'active': {
         \     'left': [ [ 'mode', 'paste' ], [ 'readonly' ], [ 'filename' ], [ 'modified' ] ],
         \     'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileformat' ], [ 'fileencoding' ], [ 'filetype' ] ]
         \   },
         \ }
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#link()
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#link()
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_normal_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_normal_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'LightlineLeft_normal_2')
@@ -100,15 +100,15 @@ function! s:suite.left_right()
 endfunction
 
 function! s:suite.subseparator()
-  let g:lightline = {
+  let g:lightryanline = {
         \   'active': {
         \     'left': [ [ 'mode', 'paste' ], [ 'readonly' ], [ 'filename' ], [ 'modified' ] ],
         \     'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileformat' ], [ 'fileencoding' ], [ 'filetype' ] ]
         \   },
         \ }
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#link()
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#link()
   for i in range(4)
     for j in range(5)
       if i + 1 == j
@@ -121,10 +121,10 @@ function! s:suite.subseparator()
 endfunction
 
 function! s:suite.component_type()
-  let g:lightline = { 'component_type': { 'error': 'error', 'warning': 'warning' } }
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#link()
+  let g:lightryanline = { 'component_type': { 'error': 'error', 'warning': 'warning' } }
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#link()
   for type in ['error', 'warning']
     call s:assert.match(s:hi(printf('LightlineLeft_active_%s', type)), printf('LightlineLeft_normal_%s', type))
     call s:assert.match(s:hi(printf('LightlineLeft_active_0_%s', type)), printf('LightlineLeft_normal_0_%s', type))
@@ -143,9 +143,9 @@ function! s:suite.component_type()
 endfunction
 
 function! s:suite.hi_clear()
-  call lightline#link()
+  call lightryanline#link()
   colorscheme default
-  call lightline#link()
+  call lightryanline#link()
   call s:assert.match(s:hi('LightlineLeft_active_0'), 'LightlineLeft_normal_0')
   call s:assert.match(s:hi('LightlineLeft_active_1'), 'LightlineLeft_normal_1')
   call s:assert.match(s:hi('LightlineLeft_active_2'), 'E411: [hH]ighlight group not found\|cleared')

@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/material.vim
+" Filename: autoload/lightryanline/colorscheme/material.vim
 " Author: Lokesh Krishna
 " License: MIT License
 " Last Change: 2017/11/25 11:13:42.
@@ -16,7 +16,7 @@ let s:yellow = '#ffcb6b'
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-if lightline#colorscheme#background() ==# 'light'
+if lightryanline#colorscheme#background() ==# 'light'
   " Light variant
   let s:bg     = '#ffffff'
   let s:gray1  = '#2e3c43'
@@ -60,4 +60,4 @@ let s:p.tabline.tabsel = [ [ s:bg, s:purple, 'bold' ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
 let s:p.tabline.right  = [ [ s:bg, s:red1, 'bold' ] ]
 
-let g:lightline#colorscheme#material#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#material#palette = lightryanline#colorscheme#fill(s:p)

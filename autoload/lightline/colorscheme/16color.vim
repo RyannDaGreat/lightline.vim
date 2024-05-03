@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/16color.vim
+" Filename: autoload/lightryanline/colorscheme/16color.vim
 " Author: itchyny, jackno
 " License: MIT License
 " =============================================================================
@@ -21,7 +21,7 @@ let s:fuchsia = [ '#ff00ff', 13 ]
 let s:aqua = [ '#00ffff', 14 ]
 let s:white = [ '#ffffff', 15 ]
 
-if lightline#colorscheme#background() ==# 'light'
+if lightryanline#colorscheme#background() ==# 'light'
   let [s:black, s:white] = [s:white, s:black]
   let [s:silver, s:gray] = [s:gray, s:silver]
   let [s:blue, s:aqua] = [s:aqua, s:blue]
@@ -50,4 +50,4 @@ let s:p.tabline.tabsel = copy(s:p.normal.right)
 let s:p.tabline.middle = [ [ s:silver, s:black ] ]
 let s:p.tabline.right = copy(s:p.normal.right)
 
-let g:lightline#colorscheme#16color#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#16color#palette = lightryanline#colorscheme#flatten(s:p)

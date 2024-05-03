@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/landscape.vim
+" Filename: autoload/lightryanline/colorscheme/landscape.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2015/11/26 21:49:44.
@@ -22,4 +22,4 @@ let s:p.tabline.right = [ [ '#d0d0d0', '#666666', 252, 242 ] ]
 let s:p.normal.error = [ [ '#d0d0d0', '#ff0000', 252, 196 ] ]
 let s:p.normal.warning = [ [ '#262626', '#ffff00', 235, 226 ] ]
 
-let g:lightline#colorscheme#landscape#palette = s:p
+let g:lightryanline#colorscheme#landscape#palette = s:p

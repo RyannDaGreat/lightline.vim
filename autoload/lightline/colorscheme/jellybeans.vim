@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/jellybeans.vim
+" Filename: autoload/lightryanline/colorscheme/jellybeans.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2022/03/15 23:59:15.
@@ -38,4 +38,4 @@ let s:p.tabline.right = copy(s:p.tabline.middle)
 let s:p.normal.error = [ [ s:red, s:base02 ] ]
 let s:p.normal.warning = [ [ s:yellow, s:base01 ] ]
 
-let g:lightline#colorscheme#jellybeans#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#jellybeans#palette = lightryanline#colorscheme#flatten(s:p)

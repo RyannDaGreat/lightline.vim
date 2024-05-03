@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/one.vim
+" Filename: autoload/lightryanline/colorscheme/one.vim
 " Author: Zoltan Dalmadi
 " License: MIT License
 " Last Change: 2019/09/09 22:42:48.
@@ -15,7 +15,7 @@ let s:yellow = [ '#e5c07b', 180 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-if lightline#colorscheme#background() ==# 'light'
+if lightryanline#colorscheme#background() ==# 'light'
   " Light variant
   let s:fg    = [ '#494b53', 238 ]
   let s:bg    = [ '#fafafa', 255 ]
@@ -57,4 +57,4 @@ let s:p.tabline.tabsel = [ [ s:bg, s:purple, 'bold' ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
 let s:p.tabline.right  = copy(s:p.normal.right)
 
-let g:lightline#colorscheme#one#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#one#palette = lightryanline#colorscheme#flatten(s:p)

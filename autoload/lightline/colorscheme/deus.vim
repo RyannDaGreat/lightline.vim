@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/deus.vim
+" Filename: autoload/lightryanline/colorscheme/deus.vim
 " Author: nikersify
 " License: MIT License
 " Last Change: 2020/02/15 20:56:45.
@@ -36,4 +36,4 @@ let s:p.tabline.right = [ s:p.normal.left[1] ]
 let s:p.normal.error = [ [ '#292c33', '#e06c75', s:term_black, s:term_red ] ]
 let s:p.normal.warning = [ [ '#292c33', '#e5c07b', s:term_black, s:term_yellow ] ]
 
-let g:lightline#colorscheme#deus#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#deus#palette = lightryanline#colorscheme#fill(s:p)

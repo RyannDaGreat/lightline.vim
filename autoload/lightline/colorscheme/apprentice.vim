@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/apprentice.vim
+" Filename: autoload/lightryanline/colorscheme/apprentice.vim
 " Author: pt307 (based on work by romainl)
 " License: MIT License
 " Last Change: 2021/03/02 18:25:22.
@@ -43,4 +43,4 @@ let s:p.tabline.middle  = [ [ s:lighter_grey, s:darker_grey ] ]
 let s:p.tabline.right   = [ [ s:darker_grey, s:medium_grey ] ]
 let s:p.tabline.tabsel  = [ [ s:darker_grey, s:ocre ] ]
 
-let g:lightline#colorscheme#apprentice#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#apprentice#palette = lightryanline#colorscheme#flatten(s:p)

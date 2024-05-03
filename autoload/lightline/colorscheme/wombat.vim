@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/wombat.vim
+" Filename: autoload/lightryanline/colorscheme/wombat.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2022/03/15 23:59:09.
@@ -39,4 +39,4 @@ let s:p.tabline.right = [ [ s:base2, s:base00 ] ]
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base023, s:yellow ] ]
 
-let g:lightline#colorscheme#wombat#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#wombat#palette = lightryanline#colorscheme#flatten(s:p)

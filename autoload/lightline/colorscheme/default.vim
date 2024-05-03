@@ -1,8 +1,8 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/default.vim
+" Filename: autoload/lightryanline/colorscheme/default.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2013/08/22 06:05:52.
 " =============================================================================
 
-let g:lightline#colorscheme#default#palette = g:lightline#colorscheme#powerline#palette
+let g:lightryanline#colorscheme#default#palette = g:lightryanline#colorscheme#powerline#palette

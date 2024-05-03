@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/nord.vim
+" Filename: autoload/lightryanline/colorscheme/nord.vim
 " Author: arcticicestudio
 " License: MIT
 " Last Change: 2017/11/12 20:27:51
@@ -43,4 +43,4 @@ let s:p.tabline.middle = [ [ s:nord5, s:nord3 ] ]
 let s:p.tabline.right = [ [ s:nord5, s:nord3 ] ]
 let s:p.tabline.tabsel = [ [ s:nord1, s:nord8 ] ]
 
-let g:lightline#colorscheme#nord#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#nord#palette = lightryanline#colorscheme#flatten(s:p)

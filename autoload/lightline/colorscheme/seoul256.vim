@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/seoul256.vim
+" Filename: autoload/lightryanline/colorscheme/seoul256.vim
 " Author: atweiden
 " License: MIT License
 " Last Change: 2022/03/15 23:58:59.
@@ -40,4 +40,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:red, s:base02 ] ]
 let s:p.normal.warning = [ [ s:yellow, s:base01 ] ]
 
-let g:lightline#colorscheme#seoul256#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#seoul256#palette = lightryanline#colorscheme#flatten(s:p)

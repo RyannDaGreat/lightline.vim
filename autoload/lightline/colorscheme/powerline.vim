@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/powerline.vim
+" Filename: autoload/lightryanline/colorscheme/powerline.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2013/09/07 15:54:41.
@@ -25,4 +25,4 @@ let s:p.tabline.right = [ [ 'gray9', 'gray3' ] ]
 let s:p.normal.error = [ [ 'gray9', 'brightestred' ] ]
 let s:p.normal.warning = [ [ 'gray1', 'yellow' ] ]
 
-let g:lightline#colorscheme#powerline#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#powerline#palette = lightryanline#colorscheme#fill(s:p)

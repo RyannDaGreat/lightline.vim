@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/ayu_mirage.vim
+" Filename: autoload/lightryanline/colorscheme/ayu_mirage.vim
 " Author: impulse
 " License: MIT License
 " Last Change: 2020/05/01 19:37:21.
@@ -39,4 +39,4 @@ let s:p.tabline.right = [ [ s:base2, s:base00 ] ]
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base023, s:yellow ] ]
 
-let g:lightline#colorscheme#ayu_mirage#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#ayu_mirage#palette = lightryanline#colorscheme#fill(s:p)

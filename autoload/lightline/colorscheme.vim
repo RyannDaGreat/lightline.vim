@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme.vim
+" Filename: autoload/lightryanline/colorscheme.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2019/09/07 11:20:37.
@@ -180,7 +180,7 @@ function! s:upconvert(nr) abort
   endif
 endfunction
 
-function! lightline#colorscheme#fill(p) abort
+function! lightryanline#colorscheme#fill(p) abort
   for k in values(a:p)
     for l in values(k)
       for m in l
@@ -206,7 +206,7 @@ function! lightline#colorscheme#fill(p) abort
   return a:p
 endfunction
 
-function! lightline#colorscheme#flatten(p) abort
+function! lightryanline#colorscheme#flatten(p) abort
   for k in values(a:p)
     for l in values(k)
       for m in range(len(l))
@@ -225,12 +225,12 @@ function! lightline#colorscheme#flatten(p) abort
 endfunction
 
 if has('gui_running') || (has('termguicolors') && &termguicolors)
-  function! lightline#colorscheme#background() abort
+  function! lightryanline#colorscheme#background() abort
     return &background
   endfunction
 else
   " &background is set inappropriately when the colorscheme sets ctermbg of the Normal group
-  function! lightline#colorscheme#background() abort
+  function! lightryanline#colorscheme#background() abort
     let bg_color = synIDattr(synIDtrans(hlID('Normal')), 'bg', 'cterm')
     if bg_color !=# ''
       if bg_color < 16

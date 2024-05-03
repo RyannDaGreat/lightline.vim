@@ -19,10 +19,10 @@ function! s:pattern(xs, ...) abort
 endfunction
 
 function! s:suite.highlight()
-  let g:lightline = {}
-  call lightline#init()
-  call lightline#colorscheme()
-  let palette = lightline#palette()
+  let g:lightryanline = {}
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_normal_0'), s:pattern(palette.normal.left[0]))
   call s:assert.match(s:hi('LightlineLeft_normal_1'), s:pattern(palette.normal.left[1]))
   call s:assert.match(s:hi('LightlineLeft_normal_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -34,11 +34,11 @@ function! s:suite.highlight()
 endfunction
 
 function! s:suite.insert()
-  let g:lightline = {}
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#highlight('insert')
-  let palette = lightline#palette()
+  let g:lightryanline = {}
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#highlight('insert')
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_insert_0'), s:pattern(palette.insert.left[0]))
   call s:assert.match(s:hi('LightlineLeft_insert_1'), s:pattern(palette.insert.left[1]))
   call s:assert.match(s:hi('LightlineLeft_insert_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -51,11 +51,11 @@ endfunction
 
 
 function! s:suite.visual()
-  let g:lightline = {}
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#highlight('visual')
-  let palette = lightline#palette()
+  let g:lightryanline = {}
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#highlight('visual')
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_visual_0'), s:pattern(palette.visual.left[0]))
   call s:assert.match(s:hi('LightlineLeft_visual_1'), s:pattern(palette.visual.left[1]))
   call s:assert.match(s:hi('LightlineLeft_visual_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -67,11 +67,11 @@ function! s:suite.visual()
 endfunction
 
 function! s:suite.replace()
-  let g:lightline = {}
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#highlight('replace')
-  let palette = lightline#palette()
+  let g:lightryanline = {}
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  call lightryanline#highlight('replace')
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_replace_0'), s:pattern(palette.replace.left[0]))
   call s:assert.match(s:hi('LightlineLeft_replace_1'), s:pattern(palette.replace.left[1]))
   call s:assert.match(s:hi('LightlineLeft_replace_2'), 'E411: [hH]ighlight group not found\|cleared')
@@ -83,15 +83,15 @@ function! s:suite.replace()
 endfunction
 
 function! s:suite.left_right()
-  let g:lightline = {
+  let g:lightryanline = {
         \   'active': {
         \     'left': [ [ 'mode', 'paste' ], [ 'readonly' ], [ 'filename' ], [ 'modified' ] ],
         \     'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileformat' ], [ 'fileencoding' ], [ 'filetype' ] ]
         \   },
         \ }
-  call lightline#init()
-  call lightline#colorscheme()
-  let palette = lightline#palette()
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_normal_0'), s:pattern(palette.normal.left[0]))
   call s:assert.match(s:hi('LightlineLeft_normal_1'), s:pattern(palette.normal.left[1]))
   call s:assert.match(s:hi('LightlineLeft_normal_2'), s:pattern(palette.normal.middle[0]))
@@ -107,7 +107,7 @@ function! s:suite.left_right()
 endfunction
 
 function! s:suite.no_components()
-  let g:lightline = {
+  let g:lightryanline = {
         \   'active': {
         \     'left': [],
         \     'right': []
@@ -117,9 +117,9 @@ function! s:suite.no_components()
         \     'right': []
         \   },
         \ }
-  call lightline#init()
-  call lightline#colorscheme()
-  let palette = lightline#palette()
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  let palette = lightryanline#palette()
   call s:assert.match(s:hi('LightlineLeft_normal_0'), s:pattern(palette.normal.left[0]))
   call s:assert.match(s:hi('LightlineLeft_normal_1'), 'E411: [hH]ighlight group not found\|cleared')
   call s:assert.match(s:hi('LightlineRight_normal_0'), s:pattern(palette.normal.right[0]))
@@ -128,15 +128,15 @@ function! s:suite.no_components()
 endfunction
 
 function! s:suite.subseparator()
-  let g:lightline = {
+  let g:lightryanline = {
         \   'active': {
         \     'left': [ [ 'mode', 'paste' ], [ 'readonly' ], [ 'filename' ], [ 'modified' ] ],
         \     'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileformat' ], [ 'fileencoding' ], [ 'filetype' ] ]
         \   },
         \ }
-  call lightline#init()
-  call lightline#colorscheme()
-  let palette = lightline#palette()
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  let palette = lightryanline#palette()
   for i in range(4)
     for j in range(5)
       if i + 1 == j
@@ -149,10 +149,10 @@ function! s:suite.subseparator()
 endfunction
 
 function! s:suite.component_type()
-  let g:lightline = { 'component_type': { 'error': 'error', 'warning': 'warning' } }
-  call lightline#init()
-  call lightline#colorscheme()
-  let palette = lightline#palette()
+  let g:lightryanline = { 'component_type': { 'error': 'error', 'warning': 'warning' } }
+  call lightryanline#init()
+  call lightryanline#colorscheme()
+  let palette = lightryanline#palette()
   for type in ['error', 'warning']
     call s:assert.match(s:hi(printf('LightlineLeft_normal_%s', type)), s:pattern(palette.normal[type][0]))
     call s:assert.match(s:hi(printf('LightlineLeft_normal_0_%s', type)), s:pattern(palette.normal.left[0], palette.normal[type][0]))

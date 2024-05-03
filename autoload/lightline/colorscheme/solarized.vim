@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/solarized.vim
+" Filename: autoload/lightryanline/colorscheme/solarized.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2020/04/06 19:22:53.
@@ -53,7 +53,7 @@ let s:blue = [ '#268bd2', s:cuicolors.blue[s:cuiindex] ]
 let s:cyan = [ '#2aa198', s:cuicolors.cyan[s:cuiindex] ]
 let s:green = [ '#859900', s:cuicolors.green[s:cuiindex] ]
 
-if lightline#colorscheme#background() ==# 'light'
+if lightryanline#colorscheme#background() ==# 'light'
   let [ s:base03, s:base3 ] = [ s:base3, s:base03 ]
   let [ s:base02, s:base2 ] = [ s:base2, s:base02 ]
   let [ s:base01, s:base1 ] = [ s:base1, s:base01 ]
@@ -77,4 +77,4 @@ let s:p.tabline.right = copy(s:p.tabline.left)
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
 
-let g:lightline#colorscheme#solarized#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#solarized#palette = lightryanline#colorscheme#flatten(s:p)

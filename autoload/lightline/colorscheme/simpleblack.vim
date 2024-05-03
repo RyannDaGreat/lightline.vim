@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/simpleblack.vim
+" Filename: autoload/lightryanline/colorscheme/simpleblack.vim
 " Author: lucasprag
 " License: MIT License
 " Last Change: 2022/03/15 23:58:35.
@@ -40,4 +40,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:red, s:black ] ]
 let s:p.normal.warning = [ [ s:gold, s:black2 ] ]
 
-let g:lightline#colorscheme#simpleblack#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#simpleblack#palette = lightryanline#colorscheme#flatten(s:p)

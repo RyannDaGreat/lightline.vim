@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/OldHope.vim
+" Filename: autoload/lightryanline/colorscheme/OldHope.vim
 " Author: tomb0y
 " License: MIT License
 " Last Change: 2017/10/15 06:20:54.
@@ -41,4 +41,4 @@ let s:p.visual.right = copy(s:p.visual.left)
 let s:p.replace.right = copy(s:p.replace.left)
 let s:p.tabline.right = copy(s:p.tabline.left)
 
-let g:lightline#colorscheme#OldHope#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#OldHope#palette = lightryanline#colorscheme#flatten(s:p)

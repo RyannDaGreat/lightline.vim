@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/ayu_dark.vim
+" Filename: autoload/lightryanline/colorscheme/ayu_dark.vim
 " Author: danielpeng2
 " License: MIT License
 " Last Change: 2020/05/01 19:37:33.
@@ -39,4 +39,4 @@ let s:p.tabline.right = [ [ s:base2, s:base00 ] ]
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base023, s:yellow ] ]
 
-let g:lightline#colorscheme#ayu_dark#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#ayu_dark#palette = lightryanline#colorscheme#fill(s:p)

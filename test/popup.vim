@@ -6,8 +6,8 @@ let s:suite = themis#suite('popup')
 let s:assert = themis#helper('assert')
 
 function! s:suite.before_each()
-  let g:lightline = {}
-  call lightline#init()
+  let g:lightryanline = {}
+  call lightryanline#init()
   tabnew
   tabonly
 endfunction

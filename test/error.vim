@@ -10,6 +10,6 @@ endfunction
 
 function! s:suite.error()
   let message = 'An error occurred.'
-  call lightline#error(message)
-  call s:assert.equals(s:message(), 'lightline.vim: ' . message)
+  call lightryanline#error(message)
+  call s:assert.equals(s:message(), 'lightryanline.vim: ' . message)
 endfunction

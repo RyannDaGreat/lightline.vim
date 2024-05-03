@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/Tomorrow_Night_Blue.vim
+" Filename: autoload/lightryanline/colorscheme/Tomorrow_Night_Blue.vim
 " Author: itchyny
 " License: MIT License
 " Last Change: 2022/03/15 23:57:49.
@@ -40,4 +40,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:base023, s:red ] ]
 let s:p.normal.warning = [ [ s:base023, s:yellow ] ]
 
-let g:lightline#colorscheme#Tomorrow_Night_Blue#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#Tomorrow_Night_Blue#palette = lightryanline#colorscheme#fill(s:p)

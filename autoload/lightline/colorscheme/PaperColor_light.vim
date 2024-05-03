@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/PaperColor_light.vim
+" Filename: autoload/lightryanline/colorscheme/PaperColor_light.vim
 " Author: TKNGUE
 " License: MIT License
 " Last Change: 2015/07/28 07:46:40.
@@ -52,4 +52,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:background, s:error ] ]
 let s:p.normal.warning = [ [ s:background, s:olive ] ]
 
-let g:lightline#colorscheme#PaperColor_light#palette = lightline#colorscheme#fill(s:p)
+let g:lightryanline#colorscheme#PaperColor_light#palette = lightryanline#colorscheme#fill(s:p)

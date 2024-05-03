@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/rosepine_moon.vim
+" Filename: autoload/lightryanline/colorscheme/rosepine_moon.vim
 " Author: lsculv (based on work by sheruost)
 " License: MIT License
 " Last Change: 2022/11/18 11:30:19.
@@ -38,4 +38,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:love, s:base ] ]
 let s:p.normal.warning = [ [ s:rose, s:surface ] ]
 
-let g:lightline#colorscheme#rosepine_moon#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#rosepine_moon#palette = lightryanline#colorscheme#flatten(s:p)

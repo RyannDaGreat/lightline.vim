@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/selenized_dark.vim
+" Filename: autoload/lightryanline/colorscheme/selenized_dark.vim
 " Author: Charles Hall
 " License: MIT License
 " Last Change: 2020/05/02 16:53:17.
@@ -46,4 +46,4 @@ let s:p.tabline.right = [[ s:bg_1, s:red ]]
 let s:p.tabline.left = [[ s:cyan, s:bg_2 ]]
 let s:p.tabline.tabsel = [[ s:bg_1, s:blue ]]
 
-let g:lightline#colorscheme#selenized_dark#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#selenized_dark#palette = lightryanline#colorscheme#flatten(s:p)

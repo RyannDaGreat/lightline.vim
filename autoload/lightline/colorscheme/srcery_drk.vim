@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/srcery_drk.vim
+" Filename: autoload/lightryanline/colorscheme/srcery_drk.vim
 " Author: Christopher Vittal
 " License: MIT License
 " Last Change: 2018/05/19
@@ -42,4 +42,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:red, s:base02 ] ]
 let s:p.normal.warning = [ [ s:yellow, s:base01 ] ]
 
-let g:lightline#colorscheme#srcery_drk#palette = lightline#colorscheme#flatten(s:p)
+let g:lightryanline#colorscheme#srcery_drk#palette = lightryanline#colorscheme#flatten(s:p)
